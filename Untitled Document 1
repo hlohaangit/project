@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>my page </title>
+
+</head>	
+
+<body>
+	<h1> heading 1 </h1>
+	this is normal text <br> this is <i> italic </i>
+	<p> this is para </p>
+	<p> this is another para</p>
+	&gt;
+	& &amp;
+	<ul>
+		<li>one </li>
+		<li>two </li>
+	</ul>
+</body>
+
+</html>
+
