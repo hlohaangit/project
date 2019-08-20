@@ -1,5 +1,6 @@
 var heads=0;
 var tails =0;
+var win
 
 var value=(flip) =>{
     if (flip<1){
