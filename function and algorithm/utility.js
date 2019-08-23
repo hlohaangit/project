@@ -29,6 +29,15 @@ module.exports={
             }
         }
         return arr;
+    },
+
+    // @purpose: generate a random no in the given range
+    // @author: Harshit Lohaan
+    // @since: 08/20/19
+    // @overview: retrn a Number betweena range of specified no
+
+    getRandomNo(min, max) {
+        return Math.floor(Math.random() * (max - min) + min);
     }
 
 
