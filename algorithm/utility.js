@@ -4,9 +4,10 @@ module.exports={
     binarySearch(arr,x){
         for (i=0;i<arr.length;++i){
             if (arr[i]==x)return i;
-        }
-        else {
-            return 'not found';
+        
+            else {
+                return "not found"
+            }
         }
     },
 
@@ -52,7 +53,7 @@ module.exports={
     },
 
     swap(arr,x,y){
-        int t=arr[y];
+        var t=arr[y];
         arr[y]=arr[x];
         arr[x]=t;     
     },
@@ -69,38 +70,35 @@ module.exports={
         }
     },
 
-    merge (arr, t){
-        var nl=t;
-        var nr=arr.length-k
-        var l[nl];
-        var r[nr];
-        var i=0;
-        var j=0;
-        var k=0;
-        for (i=0;i<nl;++i){
-            l[i]=arr[i];
-        }
-        for (j=0;i<nr;++j){
-            l[j]=arr[k+j];
-        }
-        i=0;
-        j=0;
-        k=o;
+    merge(leftArr, rightArr) {
+        var sortedArr = [];
+          while (leftArr.length && rightArr.length) {
+                if (leftArr[0] <= rightArr[0]) {  
+                    sortedArr.push(leftArr[0]);
+                    leftArr = leftArr.slice(1)
+                } 
+                else { 
+                    sortedArr.push(rightArr[0]);
+                    rightArr = rightArr.slice(1) 
+                }
+            }  
+            while (leftArr.length)
+                sortedArr.push(leftArr.shift());
+            while (rightArr.length)    
+                sortedArr.push(rightArr.shift());  
+            return sortedArr;
+    },
 
-        while (i<nl&&j<nr){
-            if (l[i]<r[j]){
-                arr[k++]=l[i++];
-            }
-            else {
-                arr[k++]=r[j++];
-            }
-        }
-
-        while (j<nr){
-            arr[k++]=r[j++];
-        }
-        while (i<nl){
-            arr[k++]=l[i++];
+    mergesort(arr) {  
+        if (arr.length < 2) {    
+            return arr; 
+        }  
+        
+        else {    
+            var midpoint = Math.floor(arr.length / 2);    
+            var leftArr   = arr.slice(0, midpoint);    
+            var rightArr  = arr.slice(midpoint, arr.length);    
+            return this.merge(this.mergesort(leftArr), this.mergesort(rightArr));  
         }
     }
 
