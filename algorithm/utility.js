@@ -60,9 +60,9 @@ module.exports={
 
     selectionSort(arr){
         for(i=0;i<arr.length-1;++i){
-            var min =i;
+            var min =arr[i];
             for (j=i+1;j<n;j++){
-                if (arr[j]<arr[min]){
+                if (arr[j]<min){
                     min = j;
                     swap(arr,min,i)
                 }
