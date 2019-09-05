@@ -6,6 +6,7 @@ class weekDay {
         if (day == 0) {
             this.dayOfMonth = " ";
             this.dayOfWeek = " ";
+            
         } else {
             this.dayOfMonth = day;
             this.dayOfWeek = dayOfWeek.findDayOfWeek(this.dayOfMonth, month, year);
