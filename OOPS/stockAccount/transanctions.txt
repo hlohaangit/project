@@ -1,0 +1,1 @@
+[{"Sold 33 shares of Pizza Hut at time 2019-8-29 15:56:55"},{"Sold 2500 shares of KFC at time 2019-8-29 15:58:24"}]

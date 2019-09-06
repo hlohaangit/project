@@ -1,0 +1,19 @@
+[
+    {
+        "name":"Dominos Pizza",
+        "number of shares":5000,
+        "share price":1000
+    },{
+        "name":"Pizza Hut",
+        "number of shares":1000,
+        "share price":3000   
+    },{
+        "name":"KFC",
+        "number of shares":2500,
+        "share price":4500
+    },{
+        "name":"Burger King",
+        "number of shares":15000,
+        "share price":7000
+    }
+]

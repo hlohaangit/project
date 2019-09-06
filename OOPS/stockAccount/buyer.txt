@@ -1,0 +1,1 @@
+[{"xyz bought 33 of Pizza Hut"},{"jjij bought 2500 of KFC"}]
